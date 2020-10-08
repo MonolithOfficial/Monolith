@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Loader from 'react-loader-spinner';
+// import Loader from 'react-loader-spinner';
 // import '../swiper/swiper.css'
 // import '../swiper/components/navigation/navigation.css';
 // import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -47,15 +47,15 @@ class Home extends Component {
                     {/* <Loader className="loader" type="Watch" color="#787878" height="100" width="100" style={{}}/> */}
                     <ul>
                     {/* {d_fade_1} */}
-                    <li id="d-fade-1"><iframe id="1" style={{border: "0", width: "100%", height: "120px"}} 
+                    <li id="d-fade-1"><iframe title="1" id="1" style={{border: "0", width: "100%", height: "120px"}} 
                         src="https://bandcamp.com/EmbeddedPlayer/track=1169101583/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
                     <a href="https://monolithworldline.bandcamp.com/track/cryptics">Cryptics by Monolith</a></iframe></li>
     
-                    <li className="d-fade-2"><iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/track=1129829295/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
+                    <li className="d-fade-2"><iframe title="2" style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/track=1129829295/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
                         <a href="https://monolithworldline.bandcamp.com/track/duel">Duel by Monolith</a></iframe></li>
     
     
-                    <li className="d-fade-3"><iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/track=1270978472/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
+                    <li className="d-fade-3"><iframe title="3" style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/track=1270978472/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
                         <a href="https://monolithworldline.bandcamp.com/track/the-elite-party">The Elite Party by Monolith</a></iframe></li>
                    
                     </ul>
