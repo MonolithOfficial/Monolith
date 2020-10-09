@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import monolith_logo_splatter3 from './images/monolith_logo2.jpg'
 
 
 import Navbar from './components/Navbar';
@@ -11,7 +12,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"/> 
-        <Navbar />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"/> 
+          <Navbar/>
+
 
         <Switch>
           <Route exact path="/" component={Home}/>

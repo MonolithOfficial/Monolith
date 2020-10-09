@@ -22,7 +22,7 @@ class Home extends Component {
     // )
     
     componentDidMount(){
-        const iframeChildOne = document.getElementById('1')
+        const iframeChildOne = document.getElementById('wr_frame')
         const iframeHolder = document.getElementById('iframe-holder')
 
         iframeChildOne.addEventListener("load", function() {
@@ -38,29 +38,14 @@ class Home extends Component {
 
     render() {
         return (
-            <div id="Home" className="fade-in">
-                <h1 className="pageTitle">Monolith</h1>
-                {/* <div id="home_holder">
-                    <img className="vinyl spin" src={vinyl_wd}/>
-                </div> */}
-                <div id="iframe-holder" className="newest-tracks-container">
-                    {/* <Loader className="loader" type="Watch" color="#787878" height="100" width="100" style={{}}/> */}
-                    <ul>
-                    {/* {d_fade_1} */}
-                    <li id="d-fade-1"><iframe title="1" id="1" style={{border: "0", width: "100%", height: "120px"}} 
-                        src="https://bandcamp.com/EmbeddedPlayer/track=1169101583/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
-                    <a href="https://monolithworldline.bandcamp.com/track/cryptics">Cryptics by Monolith</a></iframe></li>
-    
-                    <li className="d-fade-2"><iframe title="2" style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/track=1129829295/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
-                        <a href="https://monolithworldline.bandcamp.com/track/duel">Duel by Monolith</a></iframe></li>
-    
-    
-                    <li className="d-fade-3"><iframe title="3" style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/track=1270978472/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless>
-                        <a href="https://monolithworldline.bandcamp.com/track/the-elite-party">The Elite Party by Monolith</a></iframe></li>
-                   
-                    </ul>
-                    
+            <div id="Home">
+                <div id="iframe-holder">
+                    <iframe id="wr_frame" className="worldline-player" style={{border: "0", width: "100%", height: "100%"}}
+                    src="https://bandcamp.com/EmbeddedPlayer/album=428901443/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" seamless="seamless">
+                    <a href="https://monolithworldline.bandcamp.com/album/worldline-dead">Worldline;Dead by Monolith</a></iframe>
                 </div>
+
+                
             </div>
         )
     }

@@ -1,20 +1,35 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import monolith_logo_splatter3 from '../images/monolith_logo2.jpg'
+import { stack as Menu } from 'react-burger-menu'
 
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
-        <div id="navbar">
-            <div id="logoHolder" className="fade-in">
-                <img src={monolith_logo_splatter3} alt="Monolith"/>
+        <div>
+            <div id="navbar">
+                <div className="navLinks">
+                    <ul>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/tracks">Tracks</NavLink></li>
+                    </ul>
+                    <h1 className="pageTitle">Monolith</h1>
+                    <ul>
+                        <li><NavLink to="/">Darkroom</NavLink></li>
+                        <li><NavLink to="/tracks">Boombox</NavLink></li>
+                    </ul>
+                </div>
             </div>
-            <div className="navLinks">
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/tracks">Tracks</NavLink></li>
-                <li><NavLink to="/lists">Darkroom</NavLink></li>
-                <li><NavLink to="/register">Register</NavLink></li>
-            </div>
+
+            <Menu disableCloseOnEsc >
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/tracks">Tracks</NavLink>
+                <NavLink to="/">Darkroom</NavLink>
+                <NavLink to="/tracks">Boombox</NavLink>
+            </Menu>
         </div>
+        
+        
     )
 }
+
+
