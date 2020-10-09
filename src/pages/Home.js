@@ -40,7 +40,7 @@ class Home extends Component {
         return (
             <div id="Home">
                 <div id="iframe-holder">
-                    <iframe id="wr_frame" className="worldline-player" style={{border: "0", width: "100%", height: "100%"}}
+                    <iframe id="wr_frame" title="Worldline;Dead" className="worldline-player" style={{border: "0", width: "100%", height: "100%"}}
                     src="https://bandcamp.com/EmbeddedPlayer/album=428901443/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" seamless="seamless">
                     <a href="https://monolithworldline.bandcamp.com/album/worldline-dead">Worldline;Dead by Monolith</a></iframe>
                 </div>

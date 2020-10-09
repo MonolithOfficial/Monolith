@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import monolith_logo_splatter3 from './images/monolith_logo2.jpg'
+// import monolith_logo_splatter3 from './images/monolith_logo2.jpg'
 
 
 import Navbar from './components/Navbar';
